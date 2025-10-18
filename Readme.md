@@ -62,33 +62,7 @@ password: 12345
 
 ## 📁 Структура проекта
 
-project/
-│
-├── app.py
-│
-├── data/
-│ ├── init.py
-│ ├── db_session.py
-│ ├── users.py
-│ ├── news.py
-│ ├── category.py
-│
-├── forms/
-│ ├── init.py
-│ ├── news_form.py
-│ ├── category_form.py
-│ ├── login_form.py
-│ └── register_form.py
-│
-└── templates/
-├── base.html
-├── news_list.html
-├── news_detail.html
-├── news_form.html
-├── category_list.html
-├── category_form.html
-├── login.html
-└── register.html
+
 
 # 📰 Flask News Portal
 
@@ -145,7 +119,35 @@ project/
 
 ## 📁 Структура проекта
 
-
+```
+project/
+│
+├── app.py
+│
+├── data/
+│   ├── __init__.py
+│   ├── db_session.py
+│   ├── users.py
+│   ├── news.py
+│   └── category.py
+│
+├── forms/
+│   ├── __init__.py
+│   ├── news_form.py
+│   ├── category_form.py
+│   ├── login_form.py
+│   └── register_form.py
+│
+└── templates/
+    ├── base.html
+    ├── news_list.html
+    ├── news_detail.html
+    ├── news_form.html
+    ├── category_list.html
+    ├── category_form.html
+    ├── login.html
+    └── register.html
+```
 
 В проекте папки data/ и forms/ содержат __init__.py, которые пустые.
 
