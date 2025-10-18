@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block content %}
+<h2>{{ title }}</h2>
+<form method="post">
+  {{ form.hidden_tag() }}
+  <div class="mb-3">
+    {{ form.title.label(class="form-label") }} 
+    {{ form.title(class="form-control") }}
+  </div>
+  <div class="mb-3">
+    {{ form.content.label(class="form-label") }} 
+    {{ form.content(class="form-control", rows=6) }}
+  </div>
+  <div class="mb-3">
+    {{ form.categories.label(class="form-label") }} 
+    {{ form.categories(class="form-select", multiple=True) }}
+  </div>
+  <div class="form-check mb-3">
+    {{ form.is_private(class="form-check-input") }}
+    {{ form.is_private.label(class="form-check-label") }}
+  </div>
+  {{ form.submit(class="btn btn-primary") }}
+</form>
+{% endblock %}

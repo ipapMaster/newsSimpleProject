@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+<h2>Все новости</h2>
+<div class="list-group">
+  {% for n in news_list %}
+  <a
+    href="{{ url_for('news_detail', news_id=n.id) }}"
+    class="list-group-item list-group-item-action"
+  >
+    <h5>{{ n.title }}</h5>
+    <p>{{ n.content[:120] }}...</p>
+    <small
+      >Автор: {{ n.user.name }} | Категории: {% for c in n.categories %} {{
+      c.name }}{% if not loop.last %}, {% endif %}{% endfor %}
+    </small>
+  </a>
+  {% else %}
+  <p>Новостей пока нет.</p>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,77 @@
+h1 {
+color: #800080;
+text-align: center;
+}
+
+ul li {
+/* background-color: rgba(255, 0, 0, .2); */
+color: green;
+}
+
+ul {
+ display: block;
+ width: 100%;
+ height: 75%;
+ background-color: rgba(255, 0, 0, .2);
+ background-image: url('../images/flag.jpg');
+}
+
+form.login-form {
+    border: 1px dashed #f85c02;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    padding: 10px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+sup {
+color: red;
+}
+
+form .pos {
+    text-align: right;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+.result {
+    font-family: 'Arial';
+    font-size: 16pt;
+    border: 1px solid #335522;
+    border-radius: 5px;
+    background-color: #fefafa;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.centered {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:red;
+}
+
+td.delay {
+    opacity: 0;
+    animation: appear 4s forwards;
+}
+
+table {
+    margin 0 auto;
+    width: 50%
+    border-collapse: collapse;
+}
+
+@keyframes appear {
+from {opacity: 0;}
+to {opacity: 1; }
+}
